@@ -53,13 +53,13 @@ Analyze how much money is spent
 
 - Extract the CSV files data and write it out to the Delta file system using Azure Databricks notebooks.
 
-The notebook is `databricks-notebooks/1-extract.ipynb`
+The notebook can be found at databricks-notebooks/`1-extract.ipynb`
 
 ### 4. Load
 
 - Create tables and load data from Delta files using Spark SQL
 
-The notebook is `databricks-notebooks/2-load.ipynb`
+The notebook can be found at databricks-notebooks/`2-load.ipynb`
 
 ### 5. Transform
 
@@ -67,7 +67,7 @@ The notebook is `databricks-notebooks/2-load.ipynb`
 - Transform scripts write to delta, use overwrite mode, save as a table in delta.
 
 
-The notebook is `databricks-notebooks/3-transform.ipynb`
+The notebook can be found at databricks-notebooks/`3-transform.ipynb`
 
 ## Requirements
 
