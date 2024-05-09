@@ -42,8 +42,32 @@ Analyze how much money is spent
 
 ![screenshot](resources/star-schema.png)
 
+### 2. Import the data to Azure Databricks DBFS
+
+- Enable the DBFS file browser in Databricks by going to Admin Console -> Workspace Settings -> Advanced 
+- Import the starter data files to the DBFS
+
+![screenshot](resources/databricks-dbfs.png)
+
+### 3. Extract
+
+- Extract the CSV files data and write it out to the Delta file system using Azure Databricks notebooks.
+
+The notebook is `databricks-notebooks/1-extract.ipynb`
+
+### 4. Load
+
+- Create tables and load data from Delta files using Spark SQL
+
+The notebook is `databricks-notebooks/2-load.ipynb`
+
+### 5. Transform
+
+- Use Spark and Azure Databricks to run ELT processes by creating fact tables, dimension tables.
+- Transform scripts write to delta, use overwrite mode, save as a table in delta.
 
 
+The notebook is `databricks-notebooks/3-transform.ipynb`
 
 ## Requirements
 
